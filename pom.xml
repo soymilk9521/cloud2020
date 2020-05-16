@@ -10,6 +10,8 @@
   <modules>
     <module>cloud-provider-payment8001</module>
       <module>cloud-consumer-order80</module>
+      <module>cloud-api-commons</module>
+      <module>cloud-eureka-server7001</module>
   </modules>
   <packaging>pom</packaging>
 
@@ -26,6 +28,7 @@
     <mybatis.spring.boot.version>1.3.0</mybatis.spring.boot.version>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
+    <eureka.version>2.2.2.RELEASE</eureka.version>
   </properties>
 
   <!-- 子模块继承之后提供作用：锁定版本+子module不用写groupId和version -->
