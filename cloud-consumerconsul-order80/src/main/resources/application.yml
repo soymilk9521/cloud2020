@@ -1,0 +1,14 @@
+server:
+  port: 80
+
+spring:
+  application:
+    name: consul-sonsumer-order
+
+  cloud:
+    consul:
+      host: 192.168.80.71
+      port: 8500
+      discovery:
+        service-name: ${spring.application.name}
+        register-health-check: false

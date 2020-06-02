@@ -17,6 +17,8 @@
       <module>cloud-test-actuator</module>
       <module>cloud-provider-payment8004</module>
       <module>cloud-consumerzk-order80</module>
+      <module>cloud-providerconsul-payment8006</module>
+    <module>cloud-consumerconsul-order80</module>
   </modules>
   <packaging>pom</packaging>
 
@@ -35,6 +37,7 @@
     <maven.compiler.target>1.8</maven.compiler.target>
     <eureka.version>2.2.2.RELEASE</eureka.version>
     <zookeeper.version>3.4.9</zookeeper.version>
+    <consul.version>2.2.3.RELEASE</consul.version>
   </properties>
 
   <!-- 子模块继承之后提供作用：锁定版本+子module不用写groupId和version -->
