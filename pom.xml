@@ -19,6 +19,8 @@
       <module>cloud-providerconsul-payment8006</module>
       <module>cloud-consumer-consul-order80</module>
       <module>cloud-consumer-feign-order80</module>
+      <module>cloud-provider-hystrix-payment8001</module>
+    <module>cloud-consumer-feign-hystrix-order80</module>
   </modules>
   <packaging>pom</packaging>
 
@@ -39,6 +41,7 @@
     <zookeeper.version>3.4.9</zookeeper.version>
     <consul.version>2.2.3.RELEASE</consul.version>
     <openfeign.version>2.2.1.RELEASE</openfeign.version>
+    <hystrix.version>2.2.1.RELEASE</hystrix.version>
   </properties>
 
   <!-- 子模块继承之后提供作用：锁定版本+子module不用写groupId和version -->
