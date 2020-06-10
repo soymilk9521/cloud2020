@@ -1,0 +1,18 @@
+server:
+  port: 3355
+
+spring:
+  application:
+    name: cloud-config-client
+  cloud:
+    config:
+      # http://config-3344.com:3344/master/config-dev.yml
+      label: master
+      name: config
+      profile: dev
+      uri: http://config-3344.com:3344
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka

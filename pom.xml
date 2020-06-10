@@ -23,6 +23,8 @@
     <module>cloud-consumer-feign-hystrix-order80</module>
       <module>cloud-consumer-hystrix-dashboard9001</module>
       <module>cloud-gateway-gateway9527</module>
+    <module>cloud-config-center3344</module>
+    <module>cloud-config-client3355</module>
   </modules>
   <packaging>pom</packaging>
 
@@ -45,6 +47,7 @@
     <openfeign.version>2.2.1.RELEASE</openfeign.version>
     <hystrix.version>2.2.1.RELEASE</hystrix.version>
     <spring.gateway>2.2.1.RELEASE</spring.gateway>
+    <config.version>2.2.1.RELEASE</config.version>
   </properties>
 
   <!-- 子模块继承之后提供作用：锁定版本+子module不用写groupId和version -->
