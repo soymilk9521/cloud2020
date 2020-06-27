@@ -1,0 +1,5 @@
+spring:
+  profiles:
+    active: dev # 代表开发环境
+    # active: test # 代表测试环境
+    # active: info # 代表开发环境
