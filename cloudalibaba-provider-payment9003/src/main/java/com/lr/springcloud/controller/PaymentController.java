@@ -30,7 +30,7 @@ public class PaymentController {
         map.put(1l, new Payment(1l, "7e69cbb8-8f78-4410-bcbd-b79cf761547b"));
     }
 
-    @GetMapping("/paymentSQL/{id}")
+    @GetMapping(value = "/paymentSQL/{id}")
     public CommonResult<Payment> paymentSQL(@PathVariable("id") Long id) {
         Payment payment = map.get(id);
         CommonResult<Payment> result = new CommonResult<>(200, "from mysql, serverPort: " + serverPort, payment);
