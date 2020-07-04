@@ -1,0 +1,30 @@
+server:
+  port: 2001
+spring:
+  application:
+    name: cloud-seata-order-service
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.80.71:8848
+    sentinel:
+      transport:
+        dashboard: localhost:8080
+        port: 8719
+    alibaba:
+      seata:
+        tx-service-group: lr_tx_group
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.80.71:3306/seata_order?useUnicode=true&characterEncoding=utf-8&userSSL=false
+    username: root
+    password: root
+
+# 是否激活sentinel对feign的支持
+feign:
+  sentinel:
+    enabled: false
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.lr.springcloud.entities
